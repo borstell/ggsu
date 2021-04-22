@@ -48,7 +48,7 @@ su_palette <- function(name, n, type = c("discrete", "continuous"), expand = FAL
 
   if (n > length(pal)) {
     if (expand) {
-      pal <- expand_palette(pal)
+      pal <- ggsu::expand_palette(pal)
     }
     if (n > length(pal)) {
       stop("Error! Try a palette containing more colors.")
