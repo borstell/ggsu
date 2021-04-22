@@ -54,6 +54,8 @@ scales::show_col(expand_palette(su_palettes$su_dark, amount = .2), ncol=6)
 
 ## theme_su
 Draw plots with parameters conforming to the visual identity of SU
+using the function `theme_su()` to be added to your ggplot
+(NB: minor details can easily be changed using the regular `theme()` function)
 
 ### Get [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/articles/examples.html) data for demo
 ```r
@@ -81,7 +83,7 @@ ggplot(penguins, aes(x = island, fill = species)) +
   facet_wrap(~species, ncol = 1) +
   coord_flip()
 ```
-![](examples/penguin_observations.png)
+![](examples/penguin_species.png)
 
 
 Plot some correlations in penguin morphology (flipper length and body mass)
