@@ -1,0 +1,18 @@
+Package: ggsu
+Type: Package
+Title: Plotting in the Visual Identity of SU
+Version: 0.1.0
+Author: Carl Börstell
+Maintainer: Carl Börstell <calle@ling.su.se>
+Description: Create `ggplot2` plots with theme and color palettes
+    following the visual identity of SU.
+License: MIT License + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
+Imports:
+    magrittr,
+    dplyr,
+    ggplot2,
+    grDevices,
+    colorspace
